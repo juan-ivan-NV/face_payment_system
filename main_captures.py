@@ -4,7 +4,7 @@ import numpy as np
 #from cvlib.object_detection import draw_bbox                               # 80 objetos
 
 
-face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
+face_cascade=cv2.CascadeClassifier('cascades/haarcascade_frontalface_alt.xml')
 
 cap = cv2.VideoCapture(0)
 
@@ -31,20 +31,19 @@ while True:
         break
 
     elif k%256 == 32:                                                       # space = photo color ----->  face detection   
-        img_name = 'opencv_face_{}.jpg'.format(face)
+        img_name = 'face/opencv_face_{}.jpg'.format(face)
         cv2.imwrite(img_name,si_color)
         print('Image name: {}'.format(img_name))
         face += 1
-
                                      
     elif k%256 == 113:                                                      # q = photo color  ------> fruits detection   
-        img_name = 'opencv_fruit_{}.jpg'.format(fruit)
+        img_name = 'fruit/opencv_fruit_{}.jpg'.format(fruit)
         cv2.imwrite(img_name,frame)
         print('Image name: {}'.format(img_name))
         fruit += 1
     
     elif k == ord('s'):                                                     # s = photo color ------> fruits detection    
-        img_name = 'opencv_things_{}.jpg'.format(fruit)
+        img_name = 'thing/opencv_things_{}.jpg'.format(fruit)
         cv2.imwrite(img_name,frame)
         print('Image name: {}'.format(img_name))
         thing += 1
