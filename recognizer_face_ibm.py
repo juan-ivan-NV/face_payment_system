@@ -5,7 +5,7 @@ visual_recognition = VisualRecognitionV3(
     iam_apikey='11eqnJwhN7vAIg7KRTS1hCITJ3cLVmuCkpXghCtj2Wmp'
 )
 
-with open('opencv_frame_0.jpg', 'rb') as images_file:
+with open('opencv_face_0.jpg', 'rb') as images_file:
     classes = visual_recognition.classify(
         images_file,
         threshold='0.3',
