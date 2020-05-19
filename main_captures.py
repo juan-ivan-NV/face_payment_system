@@ -1,5 +1,10 @@
-import cv2
+import recognizer_things_cvlib
+import recognizer_fruits_cnn
+import recognizer_face_ibm
+import pandas as pd
 import numpy as np
+import cv2
+
 #import cvlib as cv
 #from cvlib.object_detection import draw_bbox                               # 80 objetos
 
@@ -43,7 +48,7 @@ while True:
         fruit += 1
     
     elif k == ord('s'):                                                     # s = photo color ------> fruits detection    
-        img_name = 'thing/opencv_things_{}.jpg'.format(fruit)
+        img_name = 'thing/opencv_things_{}.jpg'.format(thing)
         cv2.imwrite(img_name,frame)
         print('Image name: {}'.format(img_name))
         thing += 1
@@ -52,8 +57,22 @@ while True:
     cv2.imshow('frame',frame)
         
 
-cap.realise()
+#cap.realise()
 cv2.destroyAllWindows()
+
+
+
+fruits_class = recognizer_fruits_cnn.fruits_classifier()
+things_class = recognizer_things_cvlib.things_classifier()
+buyer_identity = recognizer_face_ibm.face_classifier()
+
+products = dict(fruits_class.items() | things_class.items())
+total_items = pd.DataFrame(products.items(),columns=['Product', 'Price'])
+total_items.loc['Total'] = pd.Series(total_items['Price'].sum(), index = ['Price'])
+
+print(buyer_identity)
+print('\n\n')
+print(total_items)
 
 
 
