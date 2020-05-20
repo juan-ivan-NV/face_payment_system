@@ -9,9 +9,9 @@ data = data.drop(columns = ['Unnamed: 0'],axis=0)
 data = data.set_index('name')
 
 
-'''def face_classifier():
+def face_classifier():
 
-    visual_recognition = VisualRecognitionV3(
+    '''visual_recognition = VisualRecognitionV3(
         version='2018-03-19',
         iam_apikey='11eqnJwhN7vAIg7KRTS1hCITJ3cLVmuCkpXghCtj2Wmp'
     )
