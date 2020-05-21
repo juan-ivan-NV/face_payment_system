@@ -35,29 +35,29 @@ while True:
         cv2.rectangle(frame, (x-40,y-80), (x+w+30,y+h+30), (200,0,0), 2)    # video, begin cords, end cords, color, line thickness
 
     k = cv2.waitKey(1)
-    if k%256 == 27:                                                         # esc = close -------> break while
+    if k%256 == 27:                                                         
         print('Closing...')
         break
 
-    elif k%256 == 32:                                                       # space = photo color ----->  face detection   
+    elif k%256 == 32:                                                          
         img_name = 'face/opencv_face_{}.jpg'.format(face)
         cv2.imwrite(img_name,si_color)
         print('Image name: {}'.format(img_name))
         face += 1
                                      
-    elif k%256 == 113:                                                      # q = photo color  ------> fruits detection   
+    elif k%256 == 113:                                                        
         img_name = 'fruit/opencv_fruit_{}.jpg'.format(fruit)
         cv2.imwrite(img_name,frame)
         print('Image name: {}'.format(img_name))
         fruit += 1
     
-    elif k == ord('s'):                                                     # s = photo color ------> objects detection    
+    elif k == ord('s'):                                                        
         img_name = 'thing/opencv_things_{}.jpg'.format(thing)
         cv2.imwrite(img_name,frame)
         print('Image name: {}'.format(img_name))
         thing += 1
 
-    #output_image = draw_bbox(frame, bbox, label, conf)                     # boxes with labels from cvlib
+    #output_image = draw_bbox(frame, bbox, label, conf)                     
     cv2.imshow('frame',frame)
         
 
@@ -97,7 +97,7 @@ pp.savefig(fig, bbox_inches='tight')
 pp.close()
 
 print(send_mail.sending_mail('tickets.pdf'))
-#exec(open('file.py').read())
+
 
 
 
