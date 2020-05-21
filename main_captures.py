@@ -15,7 +15,7 @@ import cv2
 
 face_cascade=cv2.CascadeClassifier('cascades/haarcascade_frontalface_alt.xml')
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 face = 0
 fruit = 0
@@ -51,7 +51,7 @@ while True:
         print('Image name: {}'.format(img_name))
         fruit += 1
     
-    elif k == ord('s'):                                                     # s = photo color ------> fruits detection    
+    elif k == ord('s'):                                                     # s = photo color ------> objects detection    
         img_name = 'thing/opencv_things_{}.jpg'.format(thing)
         cv2.imwrite(img_name,frame)
         print('Image name: {}'.format(img_name))
