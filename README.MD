@@ -50,7 +50,9 @@ cvlib: cvlib identifies by itself 80 item types, almost all labels allowed are n
 keras CNN: Fruists images (100px,100px,3RGB).
 
 (Example of images contained in each folder, this if from pepper´s folder.)
-![pepper grid](Slides/pepper_grid1.png)
+
+
+![pepper grid](Slides/pepper_grid.png)
 
 ### Step 3 recognizers: 
 
