@@ -1,7 +1,0 @@
-Items	Product	Price
-0	car	5.0
-1	strawberry	3.0
-2	banana	2.0
-3	airplane	9.0
-4	pear	2.0
-Total	5	21.0

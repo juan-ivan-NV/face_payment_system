@@ -28,7 +28,6 @@ def fruits_classifier():
             output = { 0:'apple',1:'avocado',2:'banana',3:'blueberry',4:'lemon',5:'onion red',6:'orange',7:'pepper green',8:'potato',9:'tomato',10:'strawberry',11:'raspberry',12:'pineapple',13:'pear',14:'coco'}
             #output = { 0:'apple',1:'avocado',2:'banana',3:'blueberry',4:'lemon',5:'onion red',6:'orange',7:'pepper green',8:'potato',9:'tomato'}
 
-            #print(predict)
             fruits.append(output[np.argmax(predict)])
 
     for key,val in prices.items():
@@ -36,5 +35,3 @@ def fruits_classifier():
             fruits_buy[key] = val
 
     return fruits_buy
-
-#print(fruits_classifier())
