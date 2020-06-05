@@ -126,7 +126,6 @@ finally 'mail ok' will be printed
 ... and its everithing, open your mail and check your ticket.
 
 (Demo)
-![video](demo2.mkv)
-
+![video](https://drive.google.com/file/d/1Wej3omHFP301ewlpP7FLZm2I2U2joy9i/view?usp=sharing)
 
 
