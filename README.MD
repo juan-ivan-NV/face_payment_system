@@ -1,6 +1,6 @@
 # Project description:
 
-This program tries to facilitate the purchase and payment process in supermarkets and stores, ideally the buyer should only take the product he wants from the shelves or parking spaces, and gradually avoid the traditional payment process, which is replaced by facial recognition of the buyer, the payment is automatically executed when the buyer leaves the store, after which he will receive an email with the purchase ticket of the things that were taken by him. 
+This program tries to facilitate the purchase and payment process in supermarkets and stores, ideally the buyer takes the product he wants from the shelves or parking spaces, and gradually avoid the traditional payment process, which is replaced by facial recognition of the buyer, the payment is automatically executed when the buyer leaves the store, after which he will receive an email with the purchase ticket of the things that were taken by him. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
